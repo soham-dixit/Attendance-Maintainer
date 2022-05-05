@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Attendance Maintainer</string>
+    <string name="Open">open</string>
+    <string name="Close">close</string>
 </resources>

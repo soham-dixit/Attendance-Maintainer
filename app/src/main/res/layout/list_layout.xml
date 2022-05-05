@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/box"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/subject_name"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="hello"
+        android:textAllCaps="true"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/subject_name"
+        android:text="hel"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="5dp"
+        android:layout_toRightOf="@+id/subject_name"
+        android:text="current"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="11sp"/>
+
+    <TextView
+        android:id="@+id/minimum"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/current"
+        android:text="hel"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:text="minimum"
+        android:paddingBottom="5dp"
+        android:layout_toRightOf="@id/current"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="11sp"
+        />
+
+    <TextView
+        android:id="@+id/presents"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Present: 13"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/absents"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/presents"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:text="Absent: 13"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@id/presents"
+        android:layout_below="@id/subject_name">
+
+        <Button
+            android:id="@+id/pAdd"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="+"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_button_green"/>
+        <Button
+            android:id="@+id/pSubtract"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="-"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round_button_red"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:layout_toRightOf="@id/absents"
+        android:layout_below="@id/presents">
+
+        <Button
+            android:id="@+id/aAdd"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="+"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round_button_green"/>
+        <Button
+            android:id="@+id/aSubtract"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:text="-"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/round_button_red"/>
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:text="ID:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"
+            />
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"
+            />
+    </LinearLayout>
+</RelativeLayout>
